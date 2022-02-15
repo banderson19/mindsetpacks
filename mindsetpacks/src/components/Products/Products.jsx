@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
 import bag1 from '../../assets/images/bag1.jpeg';
 import bag2 from '../../assets/images/bag2.jpeg';
 import bag3 from '../../assets/images/bag3.jpeg';
@@ -36,13 +35,13 @@ const Products = () => {
       cost: "$200.00"
     },
     {
-      id: 3,
+      id: 5,
       title: 'bag 5',
       img: bag5,
       cost: "$200.00"
     }
   ]
-
+  console.log(products)
   return (
     <div>
       <h1>ProductPage</h1>
@@ -56,7 +55,7 @@ const Products = () => {
                   <h5 className="card-title">{product.title}</h5>
                   <p className="card-text">cost: {product.cost}</p>
                 </div>
-                <Link to={{pathname: `/products/${product.id}`}}><button className="btn btn-primary">View Details</button></Link>
+                <Link to={`/products/${product.id}`} state = {{ product:product }}><button className="btn btn-primary">View Details</button></Link>
             </div>
             )}
           )}

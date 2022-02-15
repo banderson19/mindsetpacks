@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route} from 'react-router-dom';
-import { About, ContractWork, MYOG, Products } from './components/index.js';
+import { About, ContractWork, MYOG, Products, Product } from './components/index.js';
 
 
 export default (
@@ -10,6 +10,6 @@ export default (
           <Route path="contractwork" element={<ContractWork />} />
           <Route path="MYOG" element={<MYOG />} />
           <Route path="products" element={<Products />} />
-          <Route path="products/:id" element={<Products />} />
+          <Route path="/products/:id" element={<Product />} />
     </Routes>
 )
