@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 
 const Product = (props) => {
@@ -13,6 +13,7 @@ const Product = (props) => {
     return (
         <div>
             <div className="container mt-5">
+                <Link to="/products"><button className="btn btn-secondary mb-3">Back to Products</button></Link>
                 <div className="row">
                     <div className="col-6">
                         <img style={{ width: "100%" }} src={product.img} alt={product.img} />
