@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+
+import MindsetBlueprintLogo from '../../assets/images/MindsetBlueprintLogo.png';
 import './navbar.css';
 
 const Navbar = () => {
@@ -7,14 +9,16 @@ const Navbar = () => {
     const linkStyle = {
         margin: "1rem",
         textDecoration: "none",
-        color: 'blue',
-        fontSize: "1.5rem"
+        color: 'black',
+        fontSize: "1.5rem",
       };
 
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <div className="nav-bg">
+
+        <nav className="navbar navbar-expand-lg px-5 navbar-light ">
             <div className="navbar-links_logo">
-                <img src='https://www.kadencewp.com/wp-content/uploads/2020/10/alogo-2.png' style={{width: '200px', height: '150px'}} alt="mindsetpacks_logo" />
+                <img src={MindsetBlueprintLogo} style={{width: '200px', height: '125px'}} alt="mindsetpacks_logo" />
             </div>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -36,6 +40,7 @@ const Navbar = () => {
                 </ul>
             </div>
         </nav>
+        </div>
     );
 };
 

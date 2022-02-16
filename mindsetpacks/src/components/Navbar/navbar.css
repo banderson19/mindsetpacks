@@ -1,5 +1,11 @@
 
 
+Link:hover {
+        transition: .75s ease-in-out ;
+        background-color: #37383a;
+        text-decoration: underline;
+      }
+
 
 /* .navbar {
     display: flex;
@@ -7,10 +13,6 @@
     align-items: center;
 }
 
-.navbar.active {
-    transition: .75s ease-in-out ;
-    background-color: #37383a;
-  }
 
 .navbar-links {
     flex: 1;

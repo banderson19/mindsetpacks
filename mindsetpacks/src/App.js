@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route, Link } from "react-router-dom";
 import routes from './routes';
-import { Navbar } from './components/index.js';
+import { Navbar, Footer } from './components/index.js';
 
 
 
@@ -13,7 +12,9 @@ function App() {
       <div>
         <Navbar/>
         {routes}
+        <Footer className="footer"/>
       </div>
+
     </div>
   );
 }

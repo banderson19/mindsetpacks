@@ -44,20 +44,23 @@ const Products = () => {
   console.log(products)
   return (
     <div>
-      <h1>ProductPage</h1>
+      <h1 className="text-center">ProductPage</h1>
       <div className="container">
         <div className="row justify-content-center">
-          {products.map((product, i) =>  {
+          {products.map((product, i) => {
             return (
-            <div className="col-3 mb-5 mx-2 py-2 justify-content-spacebetween border border-dark" key={product.id} >
-              <img className="card-img-top" style={{width: "7rem"}} src={product.img} alt="Card image cap"/>
-                <div className="card-body">
-                  <h5 className="card-title">{product.title}</h5>
-                  <p className="card-text">cost: {product.cost}</p>
+              <div className="col-3 mb-5 mx-2 py-2 border border-dark" key={product.id} >
+                <div className="text-center">
+                  <img className="card-img-top" style={{ width: "7rem" }} src={product.img} alt="Card image cap" />
+                  <div className="card-body">
+                    <h5 className="card-title">{product.title}</h5>
+                    <p className="card-text">cost: {product.cost}</p>
+                  </div>
+                  <Link to={`/products/${product.id}`} state={{ product: product }}><button className="btn btn-primary">View Details</button></Link>
                 </div>
-                <Link to={`/products/${product.id}`} state = {{ product:product }}><button className="btn btn-primary">View Details</button></Link>
-            </div>
-            )}
+              </div>
+            )
+          }
           )}
         </div>
       </div>
