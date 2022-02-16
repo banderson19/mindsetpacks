@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mindsetpacks/static/css/main.a977d92a.css",
-    "main.js": "/mindsetpacks/static/js/main.175083aa.js",
+    "main.js": "/mindsetpacks/static/js/main.d89067e1.js",
     "static/js/787.fd007510.chunk.js": "/mindsetpacks/static/js/787.fd007510.chunk.js",
     "static/media/bag3-1.jpeg": "/mindsetpacks/static/media/bag3-1.aae6b0a33d4d37471efd.jpeg",
     "static/media/preston.profile.jpeg": "/mindsetpacks/static/media/preston.profile.fe471a1a3b9465f65352.jpeg",
@@ -38,11 +38,11 @@
     "static/media/warranty.png": "/mindsetpacks/static/media/warranty.d2880c1f7cd0bae02345.png",
     "index.html": "/mindsetpacks/index.html",
     "main.a977d92a.css.map": "/mindsetpacks/static/css/main.a977d92a.css.map",
-    "main.175083aa.js.map": "/mindsetpacks/static/js/main.175083aa.js.map",
+    "main.d89067e1.js.map": "/mindsetpacks/static/js/main.d89067e1.js.map",
     "787.fd007510.chunk.js.map": "/mindsetpacks/static/js/787.fd007510.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a977d92a.css",
-    "static/js/main.175083aa.js"
+    "static/js/main.d89067e1.js"
   ]
 }
