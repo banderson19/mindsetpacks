@@ -5,7 +5,7 @@ import {Home, About, ContractWork, MYOG, Products, Product } from './components/
 
 export default (
     <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/mindsetpacks" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contractwork" element={<ContractWork />} />
           <Route path="MYOG" element={<MYOG />} />
