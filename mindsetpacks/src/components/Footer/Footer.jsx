@@ -1,4 +1,7 @@
 import React from 'react'
+import instagramLogo from '../../assets/images/instagramLogo.png';
+import linkedInLogo from '../../assets/images/linkedInLogo.png';
+import facebookLogo from '../../assets/images/facebookLogo.jpg';
 
 const Footer = () => {
     return (
@@ -15,40 +18,46 @@ const Footer = () => {
                           <h5 className="text-uppercase">Links</h5>
                             <ul className="list-unstyled">
                                 <li>
-                                    <a href="#!">Link 1</a>
+                                    <a href="/home">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Link 2</a>
+                                    <a href="/products">Products</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Link 3</a>
+                                    <a href="/MYOG">MYOG</a>
                                 </li>
                                 <li>
-                                    <a href="#!">Link 4</a>
+                                    <a href="/contractwork">Contract Work</a>
+                                </li>
+                                <li>
+                                    <a href="/About">About</a>
                                 </li>
                             </ul>
                         </div>
                         <div className="col-md-3 mb-md-0 mb-3">
-                            <h5 className="text-uppercase">Links</h5>
+                            <h5 className="text-uppercase">Social Media</h5>
                             <ul className="list-unstyled">
-                                <li>
-                                    <a href="#!">Link 1</a>
+                                <li className="mb-2">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/mindsetpacks/">
+                                        <img src={instagramLogo} style={{width: "3rem"}} alt="instagram url"/>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="#!">Link 2</a>
+                                <li className="mb-2">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
+                                        <img src={facebookLogo} style={{width: "3rem"}} alt="facebook url"/>
+                                    </a>
                                 </li>
-                                <li>
-                                    <a href="#!">Link 3</a>
-                                </li>
-                                <li>
-                                    <a href="#!">Link 4</a>
+                                <li className="mb-2">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/">
+                                        <img src={linkedInLogo} style={{width: "3rem"}} alt="linkedIn url"/>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
                 </div>
             </div>
-            <div className="footer-copyright text-center py-3">© 2020 Copyright:
-                <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+            <div className="footer-copyright text-center py-3">© 2022 Copyright:
+                <a href="https://mindsetpacks.com/"> mindsetpacks.com</a>
             </div>
         </footer>
     )

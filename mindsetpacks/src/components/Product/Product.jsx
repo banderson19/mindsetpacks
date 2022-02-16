@@ -11,23 +11,20 @@ const Product = (props) => {
     
     return (
         <div>
-            <div className="container mt-5">
+            <div className="container mt-5 d-flex flex-wrap">
                 <Link to="/products"><button className="btn btn-secondary mb-3">Back to Products</button></Link>
                 <div className="row">
                     <div className="col-6">
                         <img style={{ width: "100%" }} src={image} alt={product.img} />
-                        {product.secondaryImages.map((img, i) => {
-                            return (
-                                <div className="row" key={product.id}>
-                                    <ul>
-                                        <li>
+                        <div className="d-flex flex-row" key={product.id}> 
+                            {product.secondaryImages.map((img, i) => {
+                                return (
+                                        <div className="mx-2 mt-2">
                                             <img style={{ width: "5rem" }} src={img} onClick={() => setImage(img)} />
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            )
-                        })}
+                                        </div>               
+                                )
+                            })}
+                        </div>
                     </div>
                     <div className="col-6">
                         <h1>{product.title}</h1>

@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route} from 'react-router-dom';
-import { About, ContractWork, MYOG, Products, Product } from './components/index.js';
+import {Home, About, ContractWork, MYOG, Products, Product } from './components/index.js';
 
 
 export default (
     <Routes>
-          <Route path="/" element={<Products />} />
+          <Route path="/" element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="contractwork" element={<ContractWork />} />
           <Route path="MYOG" element={<MYOG />} />

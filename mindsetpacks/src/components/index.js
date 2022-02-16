@@ -1,3 +1,4 @@
+export { default as Home } from  './Home/Home';
 export { default as About } from  './About/About';
 export { default as ContractWork } from  './ContractWork/ContractWork';
 export { default as MYOG } from  './MYOG/MYOG';

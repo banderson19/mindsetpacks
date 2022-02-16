@@ -1,46 +1,66 @@
 import React from 'react'
+import profilePic from '../../assets/images/preston.profile.jpeg';
+import designerPrinciples from '../../assets/images/designerprinciples.jpeg';
+import warrantyPic from '../../assets/images/warranty.png';
+import sketchBag from '../../assets/images/sketchbag.jpeg';
 
 const About = () => {
   return (
     <div className='container'>
-        <div className="row justify-content-md-center">
-          <img className="mr-3 col-3 " src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg" style={{ width: "150px", height: "150px" }} alt="Generic placeholder image" />
-          <div className="col-6 text-start">
-            <h4 className="mt-0"><u>About Mindset Packs</u></h4>
-            <h5>established 2020</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-        </div>
-        <hr></hr>
-        <div className="row justify-content-md-center">
-          <div className="col-6 text-end">
-            <h4 className="mt-0 "><u>Chief Designer</u></h4>
-            <h5>Preston Henning</h5>
-            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-            <button className="btn btn-info">Resume</button>
-          </div>
-          <img className="mr-3 col-3" src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg" style={{ width: "150px", height: "150px" }} alt="Generic placeholder image" />
-        </div>
-        <hr></hr>
-        <div className="row justify-content-md-center">
-          <img className="mr-3 col-3 " src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg" style={{ width: "150px", height: "150px" }} alt="Generic placeholder image" />
-          <div className="col-6 text-start">
-            <h4 className="mt-0"><u>Designer Principles</u></h4>
-            <h5>Preston Henning</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-        </div>
-        <hr></hr>
-        <div className="row justify-content-md-center">
-          <div className="col-6 text-end">
-            <h4 className="mt-0 "><u>Warranty</u></h4>
-            <h5>Preston Henning</h5>
-            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-          </div>
-          <img className="mr-3 col-3" src="https://static.vecteezy.com/system/resources/previews/002/318/271/non_2x/user-profile-icon-free-vector.jpg" style={{ width: "150px", height: "150px" }} alt="Generic placeholder image" />
-        </div>
 
-      
+      <hr className="featurette-divider" />
+
+      <div className="row featurette">
+        <div className="col-md-7 text-end">
+          <h2 className="featurette-heading">About Mindset Packs<span className="text-muted"> It’ll blow your mind.</span></h2>
+          <p className='lead'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores, dolorum eveniet natus illo pariatur tempora sit voluptatum sequi ullam consequuntur, corporis possimus. Harum nemo in commodi optio, tempora mollitia?</p>
+        </div>
+        <div className="col-md-5">
+          <img className="mr-3 col-3 " src={sketchBag} style={{ width: "500px", height: "500px" }} alt="Generic placeholder image" />
+
+        </div>
+      </div>
+
+      <hr className="featurette-divider" />
+
+      <div className="row featurette">
+        <div className="col-md-7 order-md-2">
+          <h2 className="featurette-heading">Cheif Designer <span className="text-muted"> - Preston Henning</span></h2>
+          <p className='lead'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores, dolorum eveniet natus illo pariatur tempora sit voluptatum sequi ullam consequuntur, corporis possimus. Harum nemo in commodi optio, tempora mollitia?</p>
+          <button className="btn btn-info">Resume</button>
+        </div>
+        <div className="col-md-5 order-md-1">
+          <img className="mr-3 col-3" src={profilePic} style={{ width: "500px", height: "500px" }} alt="Generic placeholder image" />
+
+        </div>
+      </div>
+
+      <hr className="featurette-divider" />
+
+      <div className="row featurette">
+        <div className="col-md-7 text-end">
+          <h2 className="featurette-heading">Designer Principles. <span className="text-muted">Brace yourself</span></h2>
+          <p className='lead'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab asperiores, dolorum eveniet natus illo pariatur tempora sit voluptatum sequi ullam consequuntur, corporis possimus. Harum nemo in commodi optio, tempora mollitia?</p>
+        </div>
+        <div className="col-md-5">
+          <img className="mr-3 col-3 " src={designerPrinciples} style={{ width: "500px", height: "500px" }} alt="Generic placeholder image" />
+
+        </div>
+      </div>
+
+      <hr className="featurette-divider" />
+
+      <div className="row featurette">
+        <div className="col-md-7 order-md-2">
+          <h2 className="featurette-heading">Last but not least, warranty. <span className="text-muted"> Checkmate</span></h2>
+          <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, dolores. Quisquam, quam! Accusamus asperiores, qui soluta quibusdam cumque amet ipsa, exercitationem iusto consequuntur autem possimus, error odio reiciendis impedit repudiandae!</p>
+        </div>
+        <div className="col-md-5 order-md-1">
+          <img className="mr-3 col-3" src={warrantyPic} style={{ width: "500px", height: "500px" }} alt="Generic placeholder image" />
+
+        </div>
+      </div>
+
     </div>
   )
 }
