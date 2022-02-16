@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
 
 const Product = (props) => {
     const location = useLocation();
-    const product = location.state.product
+    const product = location.state.product;
+    // const [active, setActive] = useState(true)
+
+
+
     console.log(product)
     // console.log('product',  props.location);
     // const { id:id, title:title,  image:image, cost:cost } = props;
@@ -17,6 +20,15 @@ const Product = (props) => {
                 <div className="row">
                     <div className="col-6">
                         <img style={{ width: "100%" }} src={product.img} alt={product.img} />
+                        <div className="row">
+                            {/* <ul>
+                                <li>
+                                    <img  style={{width: "5rem"}} src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Picture_icon_BLACK.svg/1200px-Picture_icon_BLACK.svg.png"/>
+                                    <img  style={{width: "5rem"}} src="https://pixsector.com/cache/517d8be6/av5c8336583e291842624.png"/>
+                                    <img  style={{width: "5rem"}} src="https://lh3.googleusercontent.com/EbXw8rOdYxOGdXEFjgNP8lh-YAuUxwhOAe2jhrz3sgqvPeMac6a6tHvT35V6YMbyNvkZL4R_a2hcYBrtfUhLvhf-N2X3OB9cvH4uMw=w1064-v0"/>
+                                </li>
+                            </ul> */}
+                        </div>
                     </div>
                     <div className="col-6">
                         <h1>{product.title}</h1>
