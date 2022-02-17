@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route, Navigate} from 'react-router-dom';
 import {Navbar, Footer, Home, About, ContractWork, MYOG, Products, Product } from './components/index.js';
 
 
@@ -12,7 +12,8 @@ function App() {
       <div>
         <Navbar/>
           <Routes>
-            <Route path="/"><Redirect to="/home" element={<Home/>}/></Route>
+            <Route path="*" element={<Navigate to="/" />}/>
+            <Route path="/" element={<Home/>}/>
             <Route path="about" element={<About />} />
             <Route path="contractwork" element={<ContractWork />} />
             <Route path="MYOG" element={<MYOG />} />
