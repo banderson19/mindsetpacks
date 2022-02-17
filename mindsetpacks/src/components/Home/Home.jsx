@@ -4,7 +4,6 @@ import img2 from '../../assets/images/sketchbag.jpeg';
 import img3 from '../../assets/images/MindsetBlueprintLogo.png';
 
 const Home = () => {
-    const [image, setImage] = useState(img1)
 
     const images = [img1, img2, img3, img1, img2, img3]
 
@@ -28,7 +27,7 @@ const Home = () => {
         // the dependency on mousedOver means that this effect is fired
         // every time mousedOver changes
     }, [count]);
-    console.log(count)
+    // console.log(count)
 
     return (
         <div>
