@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import routes from './routes';
-import { Navbar, Footer } from './components/index.js';
+import { Routes, Route} from 'react-router-dom';
+import {Navbar, Footer, Home, About, ContractWork, MYOG, Products, Product } from './components/index.js';
 
 
 
@@ -11,8 +11,15 @@ function App() {
     <div className="App">
       <div>
         <Navbar/>
-        {routes}
-        <Footer className="footer"/>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="contractwork" element={<ContractWork />} />
+            <Route path="MYOG" element={<MYOG />} />
+            <Route path="products" element={<Products />} />
+            <Route path="/products/:id" element={<Product />} />
+          </Routes>
+        <Footer/>
       </div>
 
     </div>
