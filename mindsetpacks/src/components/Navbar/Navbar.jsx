@@ -18,7 +18,7 @@ const Navbar = () => {
 
         <nav className="navbar navbar-expand-lg px-5 navbar-light ">
             <div className="navbar-links_logo">
-                <Link to="/"><img src={MindsetBlueprintLogo} style={{width: '200px', height: '125px'}} alt="mindsetpacks_logo" /></Link>
+                <Link to="/home"><img src={MindsetBlueprintLogo} style={{width: '200px', height: '125px'}} alt="mindsetpacks_logo" /></Link>
             </div>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav" >
                     <li className="nav-item">
-                        <Link to="/" style={linkStyle}>Home</Link>
+                        <Link to="/home" style={linkStyle}>Home</Link>
                     </li>
                     <li className="nav-item">
                         <Link to="/products" style={linkStyle}>Products</Link>
